@@ -7,7 +7,7 @@ import { FormValues } from '../utils/validationSchema';
 interface SectionProps {
   sectionIndex: number;
   control: Control<FormValues>;
-  setValue: UseFormSetValue<FormValues>; // Update setValue type
+  setValue: UseFormSetValue<FormValues>;
   removeSection: () => void;
 }
 
@@ -36,7 +36,7 @@ const Section: React.FC<SectionProps> = ({ sectionIndex, control, setValue, remo
           sectionIndex={sectionIndex}
           rowIndex={rowIndex}
           control={control}
-          setValue={setValue} // Pass setValue to Row
+          setValue={setValue}
         />
       ))}
       <Button onClick={() => addRow({ fields: [{ label: '', size: 'small' }] })}>+ Add Row</Button>

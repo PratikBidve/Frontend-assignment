@@ -1,0 +1,220 @@
+{
+  "version": "6.0",
+  "nxVersion": "20.0.7",
+  "pathMappings": {},
+  "nxJsonPlugins": [
+    {
+      "name": "@nx/vite/plugin",
+      "options": {
+        "buildTargetName": "build",
+        "testTargetName": "test",
+        "serveTargetName": "serve",
+        "previewTargetName": "preview",
+        "serveStaticTargetName": "serve-static",
+        "typecheckTargetName": "typecheck"
+      }
+    },
+    {
+      "name": "@nx/eslint/plugin",
+      "options": {
+        "targetName": "lint"
+      }
+    }
+  ],
+  "fileMap": {
+    "nonProjectFiles": [],
+    "projectFileMap": {
+      "metadata-form": [
+        {
+          "file": ".gitignore",
+          "hash": "3009140142791806673"
+        },
+        {
+          "file": "README.md",
+          "hash": "12639228776472501333"
+        },
+        {
+          "file": "eslint.config.js",
+          "hash": "18136715864555996736",
+          "deps": [
+            "npm:@nx/eslint-plugin"
+          ]
+        },
+        {
+          "file": "index.html",
+          "hash": "12606490423911802166"
+        },
+        {
+          "file": "nx.json",
+          "hash": "12198834382019518306"
+        },
+        {
+          "file": "package-lock.json",
+          "hash": "16310915104335801832"
+        },
+        {
+          "file": "package.json",
+          "hash": "723198665231191062",
+          "deps": [
+            "npm:@eslint/js",
+            "npm:@nx/eslint",
+            "npm:@nx/eslint-plugin",
+            "npm:@nx/js",
+            "npm:@nx/react",
+            "npm:@nx/vite",
+            "npm:@nx/web",
+            "npm:@nx/workspace",
+            "npm:@swc-node/register",
+            "npm:@swc/cli",
+            "npm:@swc/core",
+            "npm:@swc/helpers",
+            "npm:@testing-library/react",
+            "npm:@types/node",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:@vitejs/plugin-react",
+            "npm:@vitest/coverage-v8",
+            "npm:@vitest/ui",
+            "npm:autoprefixer",
+            "npm:eslint",
+            "npm:eslint-config-prettier",
+            "npm:eslint-plugin-import",
+            "npm:eslint-plugin-jsx-a11y",
+            "npm:eslint-plugin-react",
+            "npm:eslint-plugin-react-hooks",
+            "npm:jsdom",
+            "npm:nx",
+            "npm:postcss",
+            "npm:prettier",
+            "npm:tailwindcss",
+            "npm:tslib",
+            "npm:typescript",
+            "npm:typescript-eslint",
+            "npm:vite",
+            "npm:vitest",
+            "npm:@fluentui/react-components",
+            "npm:@hookform/resolvers",
+            "npm:react",
+            "npm:react-dom",
+            "npm:react-hook-form",
+            "npm:zod"
+          ]
+        },
+        {
+          "file": "postcss.config.js",
+          "hash": "2759402739052110475"
+        },
+        {
+          "file": "project.json",
+          "hash": "7545676892627933460"
+        },
+        {
+          "file": "public/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "src/app/app.spec.tsx",
+          "hash": "4943926629991873832",
+          "deps": [
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "src/app/app.tsx",
+          "hash": "17917847423608799157",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "src/app/components/Field.tsx",
+          "hash": "14437731459693063180",
+          "deps": [
+            "npm:react",
+            "npm:react-hook-form",
+            "npm:@fluentui/react-components"
+          ]
+        },
+        {
+          "file": "src/app/components/PageLayoutBuilder.tsx",
+          "hash": "16606649565987546113",
+          "deps": [
+            "npm:react",
+            "npm:@fluentui/react-components",
+            "npm:react-hook-form",
+            "npm:@hookform/resolvers"
+          ]
+        },
+        {
+          "file": "src/app/components/Row.tsx",
+          "hash": "7657854149299920992",
+          "deps": [
+            "npm:react",
+            "npm:react-hook-form",
+            "npm:@fluentui/react-components"
+          ]
+        },
+        {
+          "file": "src/app/components/Section.tsx",
+          "hash": "4245361938862198931",
+          "deps": [
+            "npm:react",
+            "npm:react-hook-form",
+            "npm:@fluentui/react-components"
+          ]
+        },
+        {
+          "file": "src/app/utils/validationSchema.tsx",
+          "hash": "4195162702692738120",
+          "deps": [
+            "npm:zod"
+          ]
+        },
+        {
+          "file": "src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/main.tsx",
+          "hash": "6690814573462735974",
+          "deps": [
+            "npm:react",
+            "npm:react-dom"
+          ]
+        },
+        {
+          "file": "src/styles.css",
+          "hash": "9540575453073076294"
+        },
+        {
+          "file": "tailwind.config.js",
+          "hash": "7708455515198842583",
+          "deps": [
+            "npm:@nx/react"
+          ]
+        },
+        {
+          "file": "tsconfig.app.json",
+          "hash": "6671581860431718916"
+        },
+        {
+          "file": "tsconfig.json",
+          "hash": "10138901573215323733"
+        },
+        {
+          "file": "tsconfig.spec.json",
+          "hash": "11912025189943984780"
+        },
+        {
+          "file": "vite.config.ts",
+          "hash": "2273696648034867626",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-react",
+            "npm:@nx/vite"
+          ]
+        }
+      ]
+    }
+  }
+}

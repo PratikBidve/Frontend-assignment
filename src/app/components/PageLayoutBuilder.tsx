@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Tab, TabList, SelectTabData, SelectTabEvent } from '@fluentui/react-components';
-import { useForm, Controller, useFieldArray, UseFormSetValue } from 'react-hook-form';
+import { useForm, Controller, useFieldArray } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { formSchema, FormValues } from '../utils/validationSchema';
 import { Input, Dropdown, Button, Label } from '@fluentui/react-components';
@@ -44,21 +44,19 @@ const PageLayoutBuilder: React.FC = () => {
         <div className="flex gap-8 mt-6">
           <div className="w-1/4 bg-white p-4 shadow-md rounded-lg">
             <Button
-              onClick={() =>
+              onClick={() => {
                 addSection({
                   label: '',
                   rows: [{ fields: [{ label: '', size: 'small' }] }],
-                })
-              }
+                });
+              }}
             >
               + Add Section
             </Button>
             {sectionFields.map((section, index) => (
               <div key={section.id} className="mt-4 p-2 bg-blue-700 text-white rounded flex justify-between items-center">
                 <span>New Section</span>
-                <Button onClick={() => removeSection(index)} className="ml-2 text-white">
-                  🗑️
-                </Button>
+                <Button onClick={() => removeSection(index)} className="ml-2 text-white">🗑️</Button>
               </div>
             ))}
           </div>
@@ -92,19 +90,16 @@ const PageLayoutBuilder: React.FC = () => {
                 )}
               />
             </div>
-
             {sectionFields.map((section, index) => (
               <Section
                 key={section.id}
                 sectionIndex={index}
                 control={control}
-                setValue={setValue} // Pass setValue with proper type
+                setValue={setValue}
                 removeSection={() => removeSection(index)}
               />
             ))}
-            <Button type="submit" className="mt-4 bg-blue-500 text-white">
-              Save Layout
-            </Button>
+            <Button type="submit" className="mt-4 bg-blue-500 text-white">Save Layout</Button>
           </form>
         </div>
       )}
